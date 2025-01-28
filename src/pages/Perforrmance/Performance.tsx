@@ -1,3 +1,4 @@
+import { profile } from "../../assets/assets";
 import { PerformancePanel } from "./Performance.style";
 
 export const Performance = () => {
@@ -8,19 +9,19 @@ export const Performance = () => {
       <div className="clients">
         <div className="avatars">
           <div className="img">
-            <img src="src/assets/profile.png" alt="Client 1" />
+            <img src={profile} alt="Client 1" />
             <p>Ali</p>
           </div>
           <div className="img">
-            <img src="src/assets/profile.png" alt="Client 2" />
+            <img src={profile} alt="Client 2" />
             <p>Alan</p>
           </div>
           <div className="img">
-            <img src="src/assets/profile.png" alt="Client 3" />
+            <img src={profile} alt="Client 3" />
             <p>Arun</p>
           </div>
           <div className="img">
-            <img src="src/assets/profile.png" alt="Client 3" />
+            <img src={profile} alt="Client 3" />
             <p>Arun</p>
           </div>
         </div>

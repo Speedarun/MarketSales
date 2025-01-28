@@ -1,9 +1,10 @@
+import { profile } from "../../assets/assets";
 import { Sidebar, NavItem, ProfileImg, Logout } from "./NavBar.style";
 
 const Navbar = () => {
   return (
     <Sidebar>
-      <ProfileImg src="src/assets/profile.png"/>
+      <ProfileImg src={profile}/>
       <NavItem>Dashboard</NavItem>
       <NavItem>Products</NavItem>
       <NavItem>Customers</NavItem>

@@ -6,6 +6,8 @@ import {
   RecentSold,
 } from "./DashBoard.style";
 
+import { bag, cart, carts, orders } from "../../assets/assets";
+
 export const DashBoard = () => {
   const month = [
     "January",
@@ -47,7 +49,7 @@ export const DashBoard = () => {
         </div>
         <div>
           <img
-            src="src/assets/cart.png"
+            src={cart}
             alt="Shopping cart"
             style={{ maxWidth: "100px", zIndex: 1 }}
           />
@@ -71,14 +73,14 @@ export const DashBoard = () => {
         <h3>Recent Sold</h3>
         <div className="items">
           <div className="item1">
-            <img src="src/assets/bag.jpg" alt="Bag" />
+            <img src={bag} alt="Bag" />
             <h4>Bang Bag</h4>
             <p>$1.5k earned</p>
           </div>
           <div className="item2">
             <div className="div1">
-              <img src="src/assets/orders.png" alt="" />
-              <img src="src/assets/carts.png" alt="" />
+              <img src={orders} alt="" />
+              <img src={carts}alt="" />
             </div>
 
             <div className="div2">
