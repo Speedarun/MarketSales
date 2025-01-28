@@ -5,6 +5,7 @@ import {
   Profile,
   RecentSold,
 } from "./DashBoard.style";
+import img from "../../assets/profile.png";
 
 import { bag, cart, carts, orders } from "../../assets/assets";
 
