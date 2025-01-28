@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PerformancePanel = styled.div`
-  background-color: rgb(246, 226, 74);
+  background-color: #ffcc80;
   border-radius: 20px;
   padding: 20px;
   width: 93%;
@@ -39,22 +39,20 @@ export const PerformancePanel = styled.div`
           text-align: center;
           margin: 3%;
         }
+        
       }
     }
-
-    
-  }
     .see-all {
       font-size: 0.8rem;
       color: #555;
       text-decoration: underline;
-      cursor: pointer;
-      margin-left: 80%;
+      cursor: pointer;  
     }
+  }
 
   .progress { 
     .line {
-      background-color: pink;
+      background-color: wheat;
       margin: 2% 0;
       height: 8px;
     }

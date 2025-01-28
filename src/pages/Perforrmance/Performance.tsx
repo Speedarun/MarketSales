@@ -25,8 +25,9 @@ export const Performance = () => {
             <p>Arun</p>
           </div>
         </div>
+        <div className="see-all"><a href="">See all</a></div>
       </div>
-      <div className="see-all"><a href="">See all</a></div>
+      
 
       <div className="progress">
         <h5>Your Progress</h5>
