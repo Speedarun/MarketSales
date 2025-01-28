@@ -5,7 +5,6 @@ import {
   Profile,
   RecentSold,
 } from "./DashBoard.style";
-import img from "../../assets/profile.png";
 
 export const DashBoard = () => {
   const month = [
@@ -48,7 +47,7 @@ export const DashBoard = () => {
         </div>
         <div>
           <img
-            src={img}
+            src={}
             alt="Shopping cart"
             style={{ maxWidth: "100px", zIndex: 1 }}
           />
