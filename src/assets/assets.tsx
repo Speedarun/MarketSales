@@ -1,0 +1,1 @@
+export const cart = '../../assets/cart.png';
