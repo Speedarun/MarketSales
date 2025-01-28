@@ -6,8 +6,10 @@ import {
   RecentSold,
 } from "./DashBoard.style";
 
-
-import { bag, cart, carts, orders } from "../../assets/assets";
+import bag from '../../assets/bag.jpg';
+import cart from '../../assets/cart.png';
+import carts from '../../assets/carts.png';
+import orders from '../../assets/orders.png';
 
 export const DashBoard = () => {
   const month = [

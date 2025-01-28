@@ -1,4 +1,4 @@
-import { profile } from "../../assets/assets";
+import  profile  from "../../assets/profile.png";
 import { Sidebar, NavItem, ProfileImg, Logout } from "./NavBar.style";
 
 const Navbar = () => {

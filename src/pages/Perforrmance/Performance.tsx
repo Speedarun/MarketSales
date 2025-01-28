@@ -1,4 +1,4 @@
-import { profile } from "../../assets/assets";
+import profile from '../../assets/profile.png';
 import { PerformancePanel } from "./Performance.style";
 
 export const Performance = () => {
