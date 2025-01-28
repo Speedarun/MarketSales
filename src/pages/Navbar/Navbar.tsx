@@ -1,33 +1,18 @@
-import  profile  from "../../assets/profile.png";
-import dashboard from '../../assets/dashboard.png'
-import { Sidebar, NavItem, ProfileImg, Logout, NavImg, NavTitle } from "./NavBar.style";
-
+import { Sidebar, NavItem, ProfileImg, Logout } from "./NavBar.style";
+import profile from '../../assets/profile.png';
+import { FiHome, FiPackage, FiUser, FiSettings, FiStar, FiLogOut } from "react-icons/fi";
 const Navbar = () => {
   return (
     <Sidebar>
       <ProfileImg src={profile}/>
       <NavItem>
-        <NavImg src={dashboard}/>
-        <NavTitle>Dashboard</NavTitle>
-        </NavItem>
-        <NavItem>
-        <NavImg src={dashboard}/>
-        <NavTitle>Products</NavTitle>
-        </NavItem>
-        <NavItem>
-        <NavImg src={dashboard}/>
-        <NavTitle>Customers</NavTitle>
-        </NavItem>
-        <NavItem>
-        <NavImg src={dashboard}/>
-        <NavTitle>Reviews</NavTitle>
-        </NavItem>
-        <NavItem>
-        <NavImg src={dashboard}/>
-        <NavTitle>Settings</NavTitle>
-        </NavItem>
-      
-      <Logout>Logout</Logout>
+        <FiHome />
+        Dashboard</NavItem>
+      <NavItem><FiPackage />Products</NavItem>
+      <NavItem><FiUser />Customers</NavItem>
+      <NavItem><FiStar />Reviews</NavItem>
+      <NavItem><FiSettings/>Settings</NavItem>
+      <Logout><FiLogOut/>Logout</Logout>
     </Sidebar>
   );
 };

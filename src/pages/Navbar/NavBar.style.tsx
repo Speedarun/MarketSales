@@ -7,29 +7,19 @@ display: flex;
   text-align: left;
   cursor: pointer;
   border-radius: 8px;
-  margin: 5% 2%;
-  flex-direction: row;
+  margin: 5%;
+  gap: 10%;
 
   &:hover, &:active {
     color: #ffd700;
   }
 `;
-export const NavTitle = styled.p`
-
-`;
-
-export const NavImg = styled.img`
-  margin-top: 5px;
-  width: 40px;
-  height: 40px;
-`;
 
 export const ProfileImg = styled.img`
     margin-top: 30%;
-    margin-left: 20%;
     width: 70px;
     height: 70px;
-    margin-right: 16%;
+    margin-right: 8%;
     border-radius: 50%;
     margin-bottom: 10px;
 `;
