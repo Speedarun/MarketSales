@@ -5,9 +5,9 @@ export const PerformancePanel = styled.div`
   border-radius: 20px;
   padding: 20px;
   width: 93%;
-  margin: 0 0 5% 0;
+  margin: 2% 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 94%;
+  height: 92%;
 
   h3 {
     font-size: 1.2rem;
@@ -40,14 +40,13 @@ export const PerformancePanel = styled.div`
 
     .avatars {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12%;
+      gap: 10%;
       .img {
       flex-direction: column;
         img{
         display: block;
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           margin-right: 5px;
           border: 2px solid #fff;
@@ -68,7 +67,6 @@ export const PerformancePanel = styled.div`
       height: 8px;
     }
     .row {
-      justify-content: space-between;
       align-items: center;
       background: #fff;
       padding: 5%;
@@ -85,7 +83,6 @@ export const PerformancePanel = styled.div`
           color: #555;
           margin-bottom: 5px;
         }
-
         .value {
           font-size: 1.1rem;
           font-weight: bold;
