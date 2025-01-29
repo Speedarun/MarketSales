@@ -78,9 +78,9 @@ export const PerformancePanel = styled.div`
 
       .details {
         display: flex;
-        gap:70%;
+        gap: 20rem;
         .title {
-        width: 50%
+          width: 20%;
           font-size: 0.9rem;
           color: #555;
           margin-bottom: 5px;
@@ -94,7 +94,7 @@ export const PerformancePanel = styled.div`
       }
       .details2 {
         display: flex;
-        gap: 73%;
+        gap: 21rem;
         .title {
           font-size: 0.9rem;
           color: #555;

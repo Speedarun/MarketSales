@@ -9,8 +9,7 @@ import data from '../../DummyDetails/users';
 import dummy from '../../DummyDetails/metrics';
 import bag from '../../assets/bag.jpg';
 import cart from '../../assets/cart.png';
-import carts from '../../assets/carts.png';
-import orders from '../../assets/orders.png';
+import { FaCartPlus, FaGlasses } from "react-icons/fa";
 
 export const DashBoard = () => {
   const month = [
@@ -83,8 +82,8 @@ export const DashBoard = () => {
           </div>
           <div className="item2">
             <div className="div1">
-              <img src={orders} alt="" />
-              <img src={carts}alt="" />
+              <div className="img"><FaGlasses size={35}/></div>
+              <div className="img"><FaCartPlus size={35}/></div>
             </div>
 
             <div className="div2">

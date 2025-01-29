@@ -2,6 +2,7 @@ import { PerformancePanel } from "./Performance.style";
 import { useClientStore } from "../../store/ClientStore";
 import { useEffect } from "react";
 import { useProgressStore } from "../../store/ProgressStore";
+import { FaShoppingBasket } from "react-icons/fa";
 
 export const Performance = () => {
   const { clientDetails, fetchClientDetails } = useClientStore();
@@ -44,7 +45,7 @@ export const Performance = () => {
               </div>
               <div className="line"></div>
               <div className="details2">
-                <div className="title">{progress.sold} orders</div>
+                <div className="title"><FaShoppingBasket/> {progress.sold} orders</div>
                 <div className={progress.profitorloss ? "badge positive": "badge negative"}>{progress.percentage}%</div>
               </div>
             </div>

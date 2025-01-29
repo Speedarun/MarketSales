@@ -43,7 +43,8 @@ export const Logout = styled.div`
   cursor: pointer;
   border-radius: 8px;
   margin-top: 30%;
-
+  display: flex;
+  gap: 0.7rem;
   &:hover {
     color: #ffd700;
   }

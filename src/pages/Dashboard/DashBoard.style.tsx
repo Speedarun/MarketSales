@@ -101,13 +101,12 @@ export const RecentSold = styled.div`
     height: fit-content;
     .div1 {
       display: flex;
-      justify-content: space-between;
-      img {
+      gap: 48%;
+      .img {
         flex-direction: row;
         background-color: white;
-        width: 28%;
         height: auto;
-        padding: 0 5%;
+        padding: 6%;
         border-radius: 10%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
