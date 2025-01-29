@@ -113,13 +113,13 @@ export const RecentSold = styled.div`
       }
     }
     .div2 {
-      background-color: tomato;
+      background-color: rgb(230, 110, 110);
       border-radius: 12px;
       display: flex;
       flex-direction: column;
       text-align: left;
       width: 100%;
-      margin: 6% 0;
+      margin: 5% 0;
       color: white;
       h4 {
         padding: 0 2%;
@@ -127,7 +127,6 @@ export const RecentSold = styled.div`
       p {
         display: flex;
         padding: 0 3%;
-        justify-content: space-between;
         width: 100%;
         gap: 10%;
       }
