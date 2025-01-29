@@ -17,14 +17,31 @@ export const PerformancePanel = styled.div`
   }
 
   .clients {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    .top{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40%;
+      p{
+        width: 40%;
+      }
+      .see-all {
+        width: 50%;
+        font-size: 0.7rem;
+        margin-top: 2%;
+        color: #555;
+        text-align: center;
+        cursor: pointer;  
+      }
+    }
 
     .avatars {
       display: flex;
-      gap: 18%;
+      flex-wrap: wrap;
+      gap: 12%;
       .img {
       flex-direction: column;
         img{
@@ -42,12 +59,6 @@ export const PerformancePanel = styled.div`
         
       }
     }
-    .see-all {
-      font-size: 0.8rem;
-      color: #555;
-      text-decoration: underline;
-      cursor: pointer;  
-    }
   }
 
   .progress { 
@@ -60,8 +71,8 @@ export const PerformancePanel = styled.div`
       justify-content: space-between;
       align-items: center;
       background: #fff;
-      padding: 6%;
-      border-radius: 12px;
+      padding: 5%;
+      border-radius: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       margin: 2% 2% 2% 2%;
 

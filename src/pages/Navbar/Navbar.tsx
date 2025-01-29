@@ -1,10 +1,12 @@
 import { Sidebar, NavItem, ProfileImg, Logout } from "./NavBar.style";
-import profile from '../../assets/profile.png';
 import { FiHome, FiPackage, FiUser, FiSettings, FiStar, FiLogOut } from "react-icons/fi";
+import data from '../../DummyDetails/users';
+
+const user = data.find((user) => user.id === 1);
 const Navbar = () => {
   return (
     <Sidebar>
-      <ProfileImg src={profile}/>
+      <ProfileImg src={user?.logo}/>
       <NavItem>
         <FiHome />
         Dashboard</NavItem>

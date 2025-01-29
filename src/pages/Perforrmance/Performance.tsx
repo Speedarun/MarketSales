@@ -1,5 +1,5 @@
-import profile from '../../assets/profile.png';
 import { PerformancePanel } from "./Performance.style";
+import clients from "../../DummyDetails/clients";
 
 export const Performance = () => {
   return (
@@ -7,27 +7,23 @@ export const Performance = () => {
       <h3>Performance</h3>
 
       <div className="clients">
-        <div className="avatars">
-          <div className="img">
-            <img src={profile} alt="Client 1" />
-            <p>Ali</p>
-          </div>
-          <div className="img">
-            <img src={profile} alt="Client 2" />
-            <p>Alan</p>
-          </div>
-          <div className="img">
-            <img src={profile} alt="Client 3" />
-            <p>Arun</p>
-          </div>
-          <div className="img">
-            <img src={profile} alt="Client 3" />
-            <p>Arun</p>
-          </div>
+        <div className="top">
+        <p>New clients () </p>
+        <a className="see-all" href="">See all</a>
         </div>
-        <div className="see-all"><a href="">See all</a></div>
+        <div className="avatars">
+          {clients.map((client) => {
+            return (
+              <div className="img" key={client.id}>
+                <img src={client.logo} alt="Client 1" />
+                <p>{client.name}</p>
+              </div>
+            );
+          })}
+          
+        </div>
+        
       </div>
-      
 
       <div className="progress">
         <h5>Your Progress</h5>

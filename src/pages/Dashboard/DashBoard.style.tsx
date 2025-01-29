@@ -13,7 +13,7 @@ export const MainContent = styled.div`
   border-radius: 5%;
   background-color: white;
   padding: 20px;
-  width: 95%;
+  width: 100%;
 `;
 
 export const WelcomeCard = styled.div`
@@ -120,9 +120,9 @@ export const RecentSold = styled.div`
       text-align: left;
       width: 100%;
       margin: 6% 0;
+      color: white;
       h4 {
         padding: 0 2%;
-        
       }
       p {
         display: flex;

@@ -6,6 +6,7 @@ interface Client {
 }
 interface ClientStore {
     clients: Client[];
+    setClients: () => void;
 }
 interface Progress {
     name: string;
@@ -17,6 +18,7 @@ interface Progress {
 }
 interface ProgressStore {
     progresses: Progress[];
+    setProgresses: () => void;
 }
 
 interface Sold {
@@ -26,6 +28,7 @@ interface Sold {
 }
 interface SoldStore {
     solds: Sold[];
+    setSolds: () => void;
 }
 interface User {
     logo: string;
@@ -33,6 +36,7 @@ interface User {
 }
 interface UserStore {
     users: User[];
+    setUsers: () => void;
 }
 interface Item {
     image: string;
@@ -44,42 +48,43 @@ interface ItemStore {
     items: Item[];
     total: number;
     category: string;
+    setItems: () => void;
 }
 
-export const useClientStore = create<ClientStore>(()=>({
-    clients: []
+export const useClientStore = create<ClientStore>((set)=>({
+    clients: [],
+    setClients: () => set((state) => ({
+        clients: [...state.clients]
+    }))
 }));
 
-export const useProgressStore = create<ProgressStore>(() => ({
-    progresses: [
-        {name: 'Total Income', income: "1.4", sold: 150, percentage: 15, profitorloss: true, id: 0},
-        {name: 'Total Income', income: "1.4", sold: 150, percentage: 15, profitorloss: true, id: 1},
-        {name: 'Total Income', income: "1.4", sold: 150, percentage: 15, profitorloss: true, id: 2},
-    ]
+export const useProgressStore = create<ProgressStore>((set) => ({
+    progresses: [],
+    setProgresses: () => set((state) => ({
+        progresses: [...state.progresses]
+    }))
+
 }));
 
-export const useSoldStore = create<SoldStore>(() => ({
-    solds: [
-        {category: 'Favourite', count: 6.9, id: 0},
-        {category: 'Favourite', count: 6.9, id: 1},
-        {category: 'Favourite', count: 6.9, id: 2},
-    ]
+export const useSoldStore = create<SoldStore>((set) => ({
+    solds: [],
+    setSolds: () => set((state) => ({
+        solds: [...state.solds]
+    }))
 }));
 
-export const useUserStore = create<UserStore>(() => ({
-    users: [
-        {name: 'Dan', logo:'https://cdn-icons-png.flaticon.com/128/1144/1144760.png'},
-        {name: 'Dan', logo:''},
-        {name: 'Dan', logo:''},
-    ]
+export const useUserStore = create<UserStore>((set) => ({
+    users: [],
+    setUsers: () => set((state) => ({
+        users: [...state.users]
+    }))
 }));
 
-export const useItemStore = create<ItemStore>(() => ({
-    items: [
-        {name: 'Bag', image: '', earned: '0', soldCount: 0},
-        {name: 'Bag', image: '', earned: '0', soldCount: 1},
-        {name: 'Bag', image: '', earned: '0', soldCount: 2},
-    ],
+export const useItemStore = create<ItemStore>((set) => ({
+    items: [],
+    setItems: () => set((state) => ({
+        items: [...state.items]
+    })),
      total: 4.5, 
      category: 'dresses'
 }));

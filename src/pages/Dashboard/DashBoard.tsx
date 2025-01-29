@@ -5,7 +5,8 @@ import {
   Profile,
   RecentSold,
 } from "./DashBoard.style";
-
+import data from '../../DummyDetails/users';
+import dummy from '../../DummyDetails/metrics';
 import bag from '../../assets/bag.jpg';
 import cart from '../../assets/cart.png';
 import carts from '../../assets/carts.png';
@@ -35,11 +36,12 @@ export const DashBoard = () => {
     "Friday",
     "Saturday",
   ];
+  const user = data.find((user) => user.id === 1);
   
   return (
     <MainContent>
       <Profile>
-        <h1>Welcome back, Dan!</h1>
+        <h1>Welcome back, {user?.name}!</h1>
         <p>
           {new Date().getDate()} {month[new Date().getMonth()]},{" "}
           {weekday[new Date().getDay()]}
@@ -48,7 +50,7 @@ export const DashBoard = () => {
       <WelcomeCard>
         <div>
           <h2>Good Job!</h2>
-          <p>You have over 20,000 visitors in the last 10 days. Keep it up!</p>
+          <p>You have over 20,000 visitors in the<br/> last 10 days. Keep it up!</p>
         </div>
         <div>
           <img
@@ -59,18 +61,17 @@ export const DashBoard = () => {
         </div>
       </WelcomeCard>
       <Metrics>
-        <div>
-          <h4>+6.9K</h4>
-          <p>Favorites</p>
+        {
+          dummy.map((temp: any) => {
+            return (
+              <div>
+          <h4>{temp.count}</h4>
+          <p>{temp.label}</p>
         </div>
-        <div>
-          <h4>+2.4K</h4>
-          <p>Add to bag</p>
-        </div>
-        <div>
-          <h4>+1K</h4>
-          <p>Orders</p>
-        </div>
+            )
+          })
+        }
+        
       </Metrics>
       <RecentSold>
         <h3>Recent Sold</h3>
