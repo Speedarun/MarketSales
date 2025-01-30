@@ -32,7 +32,7 @@ export const Metrics = styled.div`
   justify-content: space-between;
   margin: 2% 0;
 
-  div {
+  .div {
     flex: 1;
     background-color: #fff;
     margin: 0 10px 0 0;
@@ -44,6 +44,11 @@ export const Metrics = styled.div`
 `;
 export const Profile = styled.div`
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  .bell-logo {
+    margin: 5%;
+  }
 `;
 export const RecentSold = styled.div`
   margin: 2% 0;

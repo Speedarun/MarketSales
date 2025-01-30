@@ -15,6 +15,6 @@ interface UserStore {
 export const useUserStore = create<UserStore>((set) => ({
     users: [],
     setUsers: () => set({
-        users: userDetails
+        users: userDetails,
     })
 }));

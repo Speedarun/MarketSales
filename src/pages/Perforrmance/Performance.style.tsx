@@ -26,7 +26,7 @@ export const PerformancePanel = styled.div`
       justify-content: space-between;
       gap: 40%;
       p{
-        width: 40%;
+        width: 50%;
       }
       .see-all {
         width: 50%;

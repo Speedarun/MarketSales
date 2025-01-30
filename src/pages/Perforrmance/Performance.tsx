@@ -1,15 +1,21 @@
 import { PerformancePanel } from "./Performance.style";
 import { useClientStore } from "../../store/ClientStore";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useProgressStore } from "../../store/ProgressStore";
 import { FaShoppingBasket } from "react-icons/fa";
+import { ThreeDot } from "react-loading-indicators";
 
 export const Performance = () => {
   const { clientDetails, fetchClientDetails } = useClientStore();
   const { progressDetails, fetchProgressDetails } = useProgressStore();
+  const [isLoading, setLoading] = useState(true);
   useEffect(() => {
     fetchClientDetails();
     fetchProgressDetails();
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -17,7 +23,7 @@ export const Performance = () => {
       <h3>Performance</h3>
       <div className="clients">
         <div className="top">
-          <p>New clients ({clientDetails.length}) </p>
+          <p>New clients ({isLoading ? <ThreeDot color="#a6ada6" size="small" />: clientDetails.length}) </p>
           <a className="see-all" href="">
             See all
           </a>
