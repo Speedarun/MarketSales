@@ -1,7 +1,7 @@
 const dummyDetails = [
   {
     name: "Total Income",
-    income: "1.4",
+    income: "1.4K",
     sold: 150,
     percentage: 15,
     profitorloss: true,
@@ -9,7 +9,7 @@ const dummyDetails = [
   },
   {
     name: "Worst Selling",
-    income: "1.0",
+    income: "1.0K",
     sold: 85,
     percentage: -10,
     profitorloss: false,
@@ -17,7 +17,7 @@ const dummyDetails = [
   },
   {
     name: "Best Selling",
-    income: "1.0",
+    income: "1.0K",
     sold: 65,
     percentage: 45,
     profitorloss: true,

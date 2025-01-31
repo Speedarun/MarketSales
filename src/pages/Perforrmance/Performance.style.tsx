@@ -76,7 +76,7 @@ export const PerformancePanel = styled.div`
 
       .details {
         display: flex;
-        gap: 20rem;
+        gap: 19rem;
         .title {
           width: 20%;
           font-size: 0.9rem;
@@ -91,7 +91,7 @@ export const PerformancePanel = styled.div`
       }
       .details2 {
         display: flex;
-        gap: 21rem;
+        gap: 20.5rem;
         .title {
           font-size: 0.9rem;
           color: #555;
@@ -99,6 +99,7 @@ export const PerformancePanel = styled.div`
         }
         .badge {
           padding: 5px 10px;
+          width: 20px;
           font-size: 0.8rem;
           font-weight: bold;
           border-radius: 8px;

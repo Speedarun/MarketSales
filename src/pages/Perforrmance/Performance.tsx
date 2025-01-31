@@ -46,13 +46,13 @@ export const Performance = () => {
           return (
             <div className="row">
               <div className="details">
-                <div className="title">{progress.name}</div>
-                <div className="value">$ {progress.income}K</div>
+                <div className="title">{isLoading ? <ThreeDot color="wheat" size="small" />:progress.name}</div>
+                <div className="value">{isLoading ? <ThreeDot color="wheat" size="small" />:'$ ' + progress.income}</div>
               </div>
               <div className="line"></div>
               <div className="details2">
-                <div className="title"><FaShoppingBasket/> {progress.sold} orders</div>
-                <div className={progress.profitorloss ? "badge positive": "badge negative"}>{progress.percentage}%</div>
+                <div className="title"><FaShoppingBasket/> {isLoading ? <ThreeDot  color="wheat" size="small" />:progress.sold + ' orders'}</div>
+                <div className={isLoading ? "" : progress.profitorloss ? "badge positive": "badge negative"}>{isLoading ? <ThreeDot color="wheat" size="small" />:progress.percentage + '%'}</div>
               </div>
             </div>
           );
