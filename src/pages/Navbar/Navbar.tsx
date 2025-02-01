@@ -11,7 +11,7 @@ import {
 import data from "../../DummyDetails/users";
 
 const user = data.find((user) => user.id === 1);
-const NavBar = () => {
+export const NavBar = () => {
   return (
     <Sidebar>
       <ProfileImg src={user?.logo} />
@@ -43,4 +43,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+

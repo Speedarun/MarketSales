@@ -1,5 +1,5 @@
 import { DashBoard } from "./pages/Dashboard/DashBoard";
-import Navbar from "./pages/Navbar/NavBar";
+import { NavBar } from "./pages/Navbar/NavBar";
 import { Performance } from "./pages/Perforrmance/Performance";
 import "./App.css";
 import styled from "styled-components";
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="div">
       <Container>
-        <Navbar />
+        <NavBar />
         <div className="div2">
           <DashBoard />
           <div className="div3">
