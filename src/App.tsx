@@ -1,8 +1,15 @@
 import { DashBoard } from "./pages/Dashboard/DashBoard";
-import { Container } from "./pages/Dashboard/DashBoard.style";
-import Navbar from "./pages/Navbar/Navbar";
+import Navbar from "./pages/Navbar/NavBar";
 import { Performance } from "./pages/Perforrmance/Performance";
 import "./App.css";
+import styled from "styled-components";
+
+export const Container = styled.div`
+  display: flex;
+  height: 98vh;
+  font-family: "Arial", sans-serif;
+  border-radius: 12px;
+`;
 
 const App = () => {
   return (

@@ -91,15 +91,16 @@ export const PerformancePanel = styled.div`
       }
       .details2 {
         display: flex;
-        gap: 20.5rem;
+        gap: 20rem;
         .title {
           font-size: 0.9rem;
           color: #555;
           margin-bottom: 5px;
         }
         .badge {
-          padding: 5px 10px;
-          width: 20px;
+          padding: 1% 5% 1% 2%;
+          width: 3%;
+          text-align: center;
           font-size: 0.8rem;
           font-weight: bold;
           border-radius: 8px;

@@ -20,8 +20,8 @@ export const Performance = () => {
 
   return (
     <PerformancePanel>
-      <h3>Performance</h3>
       <div className="clients">
+      <h3>Performance</h3>
         <div className="top">
           <p>New clients ({isLoading ? <ThreeDot color="#a6ada6" size="small" />: clientDetails.length}) </p>
           <a className="see-all" href="">
@@ -52,7 +52,7 @@ export const Performance = () => {
               <div className="line"></div>
               <div className="details2">
                 <div className="title"><FaShoppingBasket/> {isLoading ? <ThreeDot  color="wheat" size="small" />:progress.sold + ' orders'}</div>
-                <div className={isLoading ? "" : progress.profitorloss ? "badge positive": "badge negative"}>{isLoading ? <ThreeDot color="wheat" size="small" />:progress.percentage + '%'}</div>
+                <div className={isLoading ? "" : progress.profitorloss ? "badge positive": "badge negative"}>{isLoading ? <ThreeDot color="wheat" size="small" />: (progress.percentage > 0 ? '+' + progress.percentage : progress.percentage) + '%'}</div>
               </div>
             </div>
           );

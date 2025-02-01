@@ -1,5 +1,4 @@
-
-import { Sidebar, NavItem, ProfileImg, Logout } from "./SideBar/styles";
+import { Sidebar, NavItem, ProfileImg, Logout } from "./styles";
 import {
   FiHome,
   FiPackage,
@@ -8,10 +7,10 @@ import {
   FiStar,
   FiLogOut,
 } from "react-icons/fi";
-import data from "../../DummyDetails/users";
+import data from "../../../DummyDetails/users";
 
 const user = data.find((user) => user.id === 1);
-const NavBar = () => {
+const SideBars = () => {
   return (
     <Sidebar>
       <ProfileImg src={user?.logo} />
@@ -43,4 +42,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default SideBars;

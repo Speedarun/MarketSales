@@ -2,7 +2,7 @@ const dummyDetails = [
   {
     name: "Total Income",
     income: "1.4K",
-    sold: 150,
+    sold: 98,
     percentage: 15,
     profitorloss: true,
     id: 0,

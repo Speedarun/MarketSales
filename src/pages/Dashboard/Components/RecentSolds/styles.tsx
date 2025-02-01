@@ -1,56 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  height: 98vh;
-  font-family: "Arial", sans-serif;
-  border-radius: 12px;
-`;
-
-
-export const MainContent = styled.div`
-  flex-grow: 1;
-  border-radius: 5%;
-  background-color: white;
-  padding: 20px;
-  width: 100%;
-`;
-
-export const WelcomeCard = styled.div`
-  background-color: rgb(234, 97, 97);
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2% 0;
-`;
-
-export const Metrics = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 2% 0;
-
-  .div {
-    flex: 1;
-    background-color: #fff;
-    margin: 0 10px 0 0;
-    padding: 2%;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-`;
-export const Profile = styled.div`
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  .bell-logo {
-    margin: 5%;
-  }
-`;
-export const RecentSold = styled.div`
+export const Recent = styled.div`
   margin: 2% 0;
   height: fit-content;
   border-radius: 12px;
