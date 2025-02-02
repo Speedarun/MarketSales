@@ -16,7 +16,7 @@ export const ProgressContainer = styled.div`
 
     .details {
       display: flex;
-      gap: 19rem;
+      gap: 18rem;
       .title {
         width: 20%;
         font-size: 0.9rem;
@@ -31,7 +31,7 @@ export const ProgressContainer = styled.div`
     }
     .details2 {
       display: flex;
-      gap: 20rem;
+      gap: 19rem;
       .title {
         font-size: 0.9rem;
         color: #555;
