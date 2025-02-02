@@ -29,10 +29,10 @@ const Header = () => {
     "Saturday",
   ];
 
-const { users, setUsers } = useUserStore();
-const [isLoading, setLoading] = useState(true);
+  const { users, setUsers } = useUserStore();
+  const [isLoading, setLoading] = useState(true);
 
-useEffect(() => {
+  useEffect(() => {
     setUsers();
     const timer = setTimeout(() => {
       setLoading(false);
@@ -40,11 +40,11 @@ useEffect(() => {
     return () => clearTimeout(timer);
   }, []);
 
-const user = users[0];
-    return (
-      <div>
-        <Profile>
-      <div>
+  const user = users[0];
+  return (
+    <div>
+      <Profile>
+        <div>
           <h3 style={{ display: "inline" }}>
             <span>
               {" "}
@@ -66,8 +66,8 @@ const user = users[0];
           <FaBell size={25} />
         </div>
       </Profile>
-      </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Header;

@@ -4,4 +4,4 @@ const dummyDetails = [
   { name: "Bag", image: "", earned: "0", soldCount: 2 },
 ];
 
-export default dummyDetails
+export default dummyDetails;

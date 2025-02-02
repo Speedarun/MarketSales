@@ -87,7 +87,7 @@ export const Recent = styled.div`
 
       p span {
         font-size: 1rem;
-        width: 40%; 
+        width: 40%;
       }
     }
   }

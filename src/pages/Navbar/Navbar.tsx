@@ -1,46 +1,16 @@
-
-import { Sidebar, NavItem, ProfileImg, Logout } from "./SideBar/styles";
-import {
-  FiHome,
-  FiPackage,
-  FiUser,
-  FiSettings,
-  FiStar,
-  FiLogOut,
-} from "react-icons/fi";
+import { ProfileImg } from "./Components/SideBar/styles";
 import data from "../../DummyDetails/users";
+import { NavItems } from "./Components/NavItem";
+import { LogOut } from "./Components/Logout";
+import { SideBar } from "./Components/SideBar";
 
-const user = data.find((user) => user.id === 1);
 export const NavBar = () => {
+  const user = data.find((user) => user.id === 1);
   return (
-    <Sidebar>
+    <SideBar>
       <ProfileImg src={user?.logo} />
-      <NavItem>
-        <FiHome />
-        Dashboard
-      </NavItem>
-      <NavItem>
-        <FiPackage />
-        Products
-      </NavItem>
-      <NavItem>
-        <FiUser />
-        Customers
-      </NavItem>
-      <NavItem>
-        <FiStar />
-        Reviews
-      </NavItem>
-      <NavItem>
-        <FiSettings />
-        Settings
-      </NavItem>
-      <Logout>
-        <FiLogOut />
-        Logout
-      </Logout>
-    </Sidebar>
+      <NavItems />
+      <LogOut />
+    </SideBar>
   );
 };
-
-

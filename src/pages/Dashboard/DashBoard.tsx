@@ -1,4 +1,4 @@
-import  Header  from "./Components/Header";
+import Header from "./Components/Header";
 import { MainContent } from "./Components/MainContent";
 import { Metrics } from "./Components/Metrics";
 import { RecentSold } from "./Components/RecentSolds";

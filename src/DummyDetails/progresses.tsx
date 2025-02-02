@@ -25,4 +25,4 @@ const dummyDetails = [
   },
 ];
 
-export default dummyDetails
+export default dummyDetails;

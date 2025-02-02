@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Welcome = styled.div`
   background-color: rgb(234, 97, 97);
   color: white;

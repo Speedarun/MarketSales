@@ -4,11 +4,6 @@ type Props = {
   children: React.ReactNode[];
 };
 
-export const MainContent:React.FC<Props> = ({children}) => {
-  return (
-    <Main>
-      {children}
-  </Main>
-  );
-  
+export const MainContent: React.FC<Props> = ({ children }) => {
+  return <Main>{children}</Main>;
 };
